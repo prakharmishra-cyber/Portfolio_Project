@@ -2,6 +2,8 @@ import React from 'react'
 
 const Navbar = ({about_ref, projects_ref, hero_ref}) => {
 
+  
+
   const scroll_to_element1 = ( ) => {
 
     hero_ref.current?.scrollIntoView({behavior: 'smooth'});
