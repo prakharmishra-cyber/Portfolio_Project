@@ -1,9 +1,8 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Hero = () => {
+const Hero = React.forwardRef(({}, refs) => {
     return (
-        <div className="hero">
+        <div ref={refs} className="hero">
             <div className="left_section">
                 <div className="tag_line">
                     We have Design Experience
@@ -35,6 +34,6 @@ const Hero = () => {
             </div>
         </div>
     )
-}
+});
 
-export default Hero
+export default Hero;
